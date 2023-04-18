@@ -1,12 +1,17 @@
-import { Dimensions, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import MapScreen from "./screens/MapScreen";
 import { useState } from "react";
 import HomeScreen from "./screens/HomeScreen";
 import Navbar from "./components/Navbar";
 import ProfileScreen from "./screens/ProfileScreen";
-import SettingsScreen from "./screens/SettingsScreen";
+import ShareScreen from "./screens/ShareScreen";
 
-const screens = [HomeScreen, MapScreen, ProfileScreen, SettingsScreen];
+const screens = [
+  <HomeScreen />,
+  <MapScreen />,
+  <ShareScreen />,
+  <ProfileScreen />,
+];
 
 const App = () => {
   const [screen, setScreen] = useState(screens[1]);

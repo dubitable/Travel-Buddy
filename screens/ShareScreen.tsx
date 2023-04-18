@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from "react-native";
 
-const SettingsScreen = () => {
+const ShareScreen = () => {
   return (
     <View style={styles.container}>
       <Text> Hello World </Text>
@@ -8,7 +8,7 @@ const SettingsScreen = () => {
   );
 };
 
-export default SettingsScreen;
+export default ShareScreen;
 
 const styles = StyleSheet.create({
   container: {
